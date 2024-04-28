@@ -56,4 +56,4 @@ onload = () =>{
     }
 }
 
-year.innerHTML = today.getFullYear();;
+year.innerHTML = today.getFullYear();
