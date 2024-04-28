@@ -7,7 +7,7 @@
     <meta name="author" content="Salma halhoul">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- css link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <!-- boxicon link -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- remixicon link -->
@@ -19,7 +19,7 @@
     <!-- aos animation link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- icon -->
-    <link rel="shortcut icon" href="img/Icon.ico" type="image/x-icon">
+    <link rel="icon" href="img/Icon.ico" type="image/x-icon">
     <title>Portfolio</title>
 </head>
 <body>
@@ -27,7 +27,7 @@
     <header>
         <a href="#" class="logo">Port<span>folio</span></a>
 
-        <div class="bx bx-menu" id="menu-icon"></div>
+        
 
         <ul class="navlist">
             <li><a href="#home">Home</a></li>
@@ -35,10 +35,11 @@
             <li><a href="#services">Services</a></li>
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
+        </ul> 
 
         <div class="top-btn">
             <i class='bx bx-moon toggle-icon'></i>
+            <div class="bx bx-menu" id="menu-icon"></div>
             <!-- <a href="#" class="h-btn">Contact me</a> -->
         </div>
     </header>
@@ -77,9 +78,9 @@
                     <p class="exp">grade:<span>Bac+5</span></p>
                     <p class="exp">university:<span>ENSA Agadir</span></p>
                     <p class="exp">speciality:<span>Web & Mobile Developer, Security Analyst and UX Designer </span></p>
-                    <p class="exp">address:<span>NR 541 Lagourira Lakhyam Agadir, Morocco</span></p>
+                    <p class="exp">address:<span>Agadir, Morocco</span></p>
                     <p class="exp">email:<span>Halhoulsa00@gmail.com</span></p>
-                    <p class="exp">phone:<span>+212-609-605-619</span></p>
+                    <p class="exp">phone:<span>(+212) 711 090 348</span></p>
 
                 </div>
                 <a href="#portfolio" class="btn">View all projects</a>
@@ -192,7 +193,7 @@
             <form action="traitement.php" method="POST">
                 <input type="text" name="name" placeholder="Your name" required>
                 <input type="text" name="email" placeholder="Email Address">
-                <textarea name="messate" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
                 <input type="submit" name="" value="Send Message" class="send-btn">
             </form>
         </div>
@@ -202,16 +203,16 @@
     <!-- footer starts -->
     <div class="footer">
         <div class="copyright">
-            <p>2023 Salma Halhoul, All Rights Reserved</p>
+            <p>&copy; <span id="current-year"></span> | developed with <span class="heart">♥</span> by Salma Halhoul.</p>
         </div>
-        <a href="#home" class="scroll-top">
+        <a href="#home" class="scroll-top hidden">
             <i class="ri-arrow-up-s-fill"></i>
         </a>
     </div>
     <!-- footer ends -->
 
     <!-- js link -->
-    <script src="script.js"></script>
+    <script src="./js/script.js"></script>
     <!-- aos animation script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

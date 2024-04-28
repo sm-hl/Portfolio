@@ -79,6 +79,11 @@ span{
     color: var(--main-color);
     text-shadow: 3px 3px 20px var(--main-color), -2px 1px 30px var(--text-color);
 }
+.top-btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 #menu-icon{
     font-size: 35px;
     z-index: 10001;
@@ -89,6 +94,7 @@ span{
     font-size: 35px;
     z-index: 10001;
     cursor: pointer;
+    margin-right: 2rem;
 }
 .h-btn{
     display: inline-block;
@@ -418,6 +424,19 @@ form .send-btn:hover{
     font-weight: 400;
     color: var(--other-color);
 }
+.copyright .heart{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.hidden{
+    display: none;
+}
+.scroll-top{
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
 .scroll-top i{
     display: inline-flex;
     align-items: center;
@@ -466,7 +485,7 @@ form .send-btn:hover{
     }
     .hero{
         height: 90vh;
-        background-position: center;
+        background-position: right;
     }
 }
 
@@ -509,6 +528,9 @@ form .send-btn:hover{
 @media (max-width: 950px) {
     :root{
         --h1-font: 3.5rem;
+    }
+    .hero{
+        background-image: initial !important;/*hidden*/
     }
     .social{
         margin-bottom: 20px;
