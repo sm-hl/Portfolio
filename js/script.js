@@ -8,25 +8,28 @@ let scrollTop = document.querySelector('.scroll-top');
 let today = new Date();
 const year = document.getElementById('current-year');
 
+//dark-light mode
 toggleicon.addEventListener('click', () =>{
     toggleicon.classList.toggle('bx-sun');
     document.body.classList.toggle('dark-mode');
-
-    if (document.body.classList.contains('dark-mode')) {
-        aboutImg.src = 'img/Logo.png'; 
-        hero.style.background = 'no-repeat right/40% url(../img/Logo-bg.png)'; 
-        localStorage.setItem("mode","dark");
-    } else {
-        aboutImg.src = 'img/Logo-white.png'; 
-        hero.style.background = 'no-repeat right/40% url(../img/Logo-white.png)'; 
-        localStorage.setItem("mode","light");
-    }
+    //img
+    // if (document.body.classList.contains('dark-mode')) {
+    //     aboutImg.src = 'img/Logo-bg.png'; 
+    //     hero.style.background = 'no-repeat right/40% url(../img/Logo-bg.png)'; 
+    //     localStorage.setItem("mode","dark");
+    // } else {
+    //     aboutImg.src = 'img/logo-bg-white.png'; 
+    //     hero.style.background = 'no-repeat right/40% url(../img/logo-bg-white.png)'; 
+    //     localStorage.setItem("mode","light");
+    // }
 });
 
+//scroll to top
 window.addEventListener("scroll", function(){
     header.classList.toggle("sticky", this.window.scrollY>120);
 });
 
+//menu
 menu.onclick = () => {
     menu.classList.toggle('bx-x');
     navlist.classList.toggle('active');

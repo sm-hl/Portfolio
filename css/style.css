@@ -10,7 +10,7 @@
 
 :root{
     /* --main-color: #0aa6e4; */
-    --main-color: #075fe4;
+    --main-color: #35a5a5;
     --other-color: #6d727a;
     --bg-card-color: #dfe3e7;
     --bg1-card-color: #fff;
@@ -20,11 +20,13 @@
     --text-color: #162328;
     --h1-font: 4.5rem;
     --h2-font: 2.9rem;
+    --h4-font: 1.4rem;
+    --h5-font: 1.5rem;
     --p-font: 1rem;
 }
 
 .dark-mode{
-    --main-color: #0c9dd6;
+    --main-color: #38a6a4;
     --other-color: #d3d8e0;
     --bg-card-color: #2d343f;
     --bg1-card-color: #2d343f;
@@ -96,6 +98,22 @@ span{
     cursor: pointer;
     margin-right: 2rem;
 }
+.lang-icon{
+  margin-right: 2rem;
+}
+.lang-icon .lang{
+  font-size: 20px;
+  padding: 5px;
+  background-color: transparent;
+  border: none;
+  color: var(--other-color);
+  z-index: 10001;
+  cursor: pointer;
+}
+.lang-icon .lang.active{
+  background-color: var(--main-color);
+  color: var(--bg-color);
+}
 .h-btn{
     display: inline-block;
     padding: 11px 26px;
@@ -123,7 +141,7 @@ section{
     height: 100vh;
     width: 100%;
     /* background: repeat left top/width url(../img/background.png); */
-    background: no-repeat right/40% url(../img/Logo-white.png);
+    background: no-repeat right/40% url(../img/hero.png);
     /* background: no-repeat 170% 50%/80% url(../img/Logo-removebg.png); */
     /* background-position: top right;
     background-size: 70%; */
@@ -132,7 +150,7 @@ section{
     justify-content: flex-start;
 }
 .main-content h4{
-    font-size: 1.6rem;
+    font-size: var(--h4-font);
 }
 .main-content h1{
     font-size: var(--h1-font);
@@ -194,9 +212,15 @@ section{
     margin-left: 15px;
     transition: all .50s ease;
 }
+.btn2 span{
+  transition: all .50s ease;
+}
 .btn2:hover{
     background: var(--main-color);
     color: var(--bg-color);
+}
+.btn2:hover span{
+  color: var(--bg-color);
 }
 /* hero ends*/
 
@@ -214,7 +238,7 @@ section{
     border-radius: 50%;
     max-width: 530px;
     object-fit: cover;
-    border: 7px solid var(--main-color);
+    /* border: 7px solid var(--main-color); */
     box-shadow: 0 0 20px var(--main-color);
 }
 .about-text h2{
@@ -249,7 +273,8 @@ section{
 .services-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,auto));
-    align-items: center;
+    /* align-items: center; */
+    align-items: stretch;/*to have the same height*/
     gap: 2.3rem;
     margin-top: 4.2rem;
 }
@@ -309,7 +334,8 @@ section{
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,auto));
-    align-items: center;
+    /* align-items: center; */
+    align-items: stretch;/*to have the same height*/
     gap: 2.3rem;
     margin-top: 4.2rem;
 }
@@ -334,7 +360,7 @@ section{
     margin-bottom: 0.5rem;
 }
 .row .row-text h5{
-    font-size: 20px;
+    font-size: var(--h5-font);
     font-weight: 600;
     color: var(--other-color);
 }
@@ -350,7 +376,7 @@ section{
     background: var(--main-color);
 }
 .row h4{
-    font-size: 25px;
+    font-size: var(--h4-font);
     font-weight: 700;
     margin-bottom: 10px;
     line-height: 1.4;
@@ -521,6 +547,8 @@ form .send-btn:hover{
     :root{
         --h1-font: 4rem;
         --h2-font: 2.2rem;
+        --h4-font: 1.3rem;
+        --h5-font: 1.4rem;
         --p-font: 15px;
     }
 }

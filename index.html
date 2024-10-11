@@ -25,20 +25,24 @@
 <body>
     <!-- header starts -->
     <header>
-        <a href="#" class="logo">Port<span>folio</span></a>
-
-        
+        <a href="#" class="logo" id="logo">Port<span>folio</span></a>
 
         <ul class="navlist">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" id="h-home">Home</a></li>
+            <li><a href="#about" id="h-about">About</a></li>
+            <li><a href="#services" id="h-services">Services</a></li>
+            <li><a href="#portfolio" id="h-portfolio">Portfolio</a></li>
+            <li><a href="#contact" id="h-contact">Contact</a></li>
         </ul> 
 
         <div class="top-btn">
             <i class='bx bx-moon toggle-icon'></i>
+
+            <div class="lang-icon">
+              <button type="button" id="en" onclick="changeLang('en')" class="lang active">En</button>
+              <button type="button" id="fr" onclick="changeLang('fr')" class="lang">Fr</button>
+            </div>
+          
             <div class="bx bx-menu" id="menu-icon"></div>
             <!-- <a href="#" class="h-btn">Contact me</a> -->
         </div>
@@ -48,9 +52,9 @@
     <!-- hero starts -->
     <section class="hero" id="home">
         <div class="main-content" data-aos="fade-in">
-            <h4>Hi, There!</h4>
-            <h1>I'm <span>Salma Halhoul</span></h1>
-            <p>Software Engineer from ENSA Agadir.</p>
+            <h4 id="hero-1">Hi, There!</h4>
+            <h1 id="hero-2">I'm <span>Salma Halhoul</span></h1>
+            <p id="hero-3">Software Engineer from ENSA Agadir.</p>
             <div class="social">
                 <a target="_blank" href="https://web.facebook.com/profile.php?id=100057835655861"><i class='bx bxl-facebook'></i></a>
                 <a target="_blank" href="https://www.youtube.com/channel/UC3VVZq3WuyShp8HWLmfhY8A"><i class='bx bxl-youtube' ></i></a>
@@ -59,8 +63,9 @@
             </div>
 
             <div class="main-btn">
-                <a href="#contact" class="btn">Hire me</a>
-                <a href="./doc/cv-salma-halhoul.pdf" download="cv-salma-halhoul.pdf" class="btn btn2">Download CV</a>
+                <a href="#contact" id="hero-btn" class="btn">Hire me</a>
+                <a href="./doc/cv-salma-halhoul.pdf" download="cv-salma-halhoul.pdf" class="btn btn2"><i class='bx bxs-cloud-download'></i> <span id="hero-encv">English CV</span></a>
+                <a href="./doc/cv-salma-halhoul.pdf" download="cv-salma-halhoul.pdf" class="btn btn2"><i class='bx bxs-cloud-download'></i> <span id="hero-frcv">French CV</span></a>
             </div>
         </div>
     </section>
@@ -69,21 +74,21 @@
     <!-- about starts -->
         <section class="about" id="about">
             <div class="about-img" data-aos="zoom-in-down">
-                <img src="img/logo.png" alt="">
+                <img src="img/about.png" alt="">
             </div>
 
             <div class="about-text" data-aos="zoom-in-up">
-                <h2>I am <span>a Software Engineer</span></h2>
+                <h2 id="about-1">I am <span>a Software Engineer</span></h2>
                 <div class="exp-area">
-                    <p class="exp">grade:<span>Bac+5</span></p>
-                    <p class="exp">university:<span>ENSA Agadir</span></p>
-                    <p class="exp">speciality:<span>Web & Mobile Developer, Security Analyst and UX Designer </span></p>
-                    <p class="exp">address:<span>Agadir, Morocco</span></p>
-                    <p class="exp">email:<span>Halhoulsa00@gmail.com</span></p>
-                    <p class="exp">phone:<span>(+212) 711 090 348</span></p>
+                    <p class="exp" id="about-2">grade:<span>Bac+5</span></p>
+                    <p class="exp" id="about-3">university:<span>ENSA Agadir</span></p>
+                    <p class="exp" id="about-4">speciality:<span>Web & Mobile Developer, Security Analyst, UX Designer and Graphic Designer </span></p>
+                    <p class="exp" id="about-5">address:<span>Agadir, Morocco</span></p>
+                    <p class="exp" id="about-6">email:<span>Halhoulsalma79@gmail.com</span></p>
+                    <p class="exp" id="about-7">phone:<span>(+212) 711 090 348</span></p>
 
                 </div>
-                <a href="#portfolio" class="btn">View all projects</a>
+                <a href="#portfolio" class="btn" id="about-btn">View all projects</a>
             </div>
         </section>
     <!-- about ends -->
@@ -91,14 +96,14 @@
     <!-- services starts -->
     <section class="services" id="services">
         <div class="center-text" data-aos="fade-down">
-            <h2>My <span>Services</span></h2>
+            <h2 id="service-1">My <span>Services</span></h2>
         </div>
 
         <div class="services-content" data-aos="zoom-in-up">
             <div class="box">
                 <img src="img/s-1.png" alt="">
-                <h3>Web Developer</h3>
-                <p> Designing, creating,
+                <h3 id="service-2">Web Developer</h3>
+                <p id="service-3"> Designing, creating,
                     and maintaining websites and web applications.
                     Using languages such as HTML, CSS,
                     and JavaScript to build the visual and interactive
@@ -109,8 +114,8 @@
 
             <div class="box">
                 <img src="img/s-2.png" alt="">
-                <h3>UX Design</h3>
-                <p>Enhancing the overall experience
+                <h3 id="service-4">UX Design</h3>
+                <p id="service-5">Enhancing the overall experience
                  that users have when interacting with digital products, 
                  such as websites, apps, or software. Conduct user research,
                  create user personas, design user interfaces, and ensure that
@@ -118,7 +123,7 @@
                 <!-- <a href="#">Download now <i class='bx bx-right-arrow-alt' ></i></a> -->
             </div>
 
-            <div class="box">
+            <!-- <div class="box">
                 <img src="img/s-3.png" alt="">
                 <h3>Cybersecurity</h3>
                 <p>Responsible for protecting
@@ -126,8 +131,16 @@
                 attacks, and breaches. Implement security measures, 
                 conduct vulnerability assessments, and develop security 
                 policies to safeguard information.</p>
+            </div> -->
+
+            <div class="box">
+              <img src="img/s-2.png" alt="">
+              <h3 id="service-6">Graphic Designer</h3>
+              <p id="service-7">As a passionate Graphic Designer, I offer a wide range of services to meet your visual communication and multimedia needs. My expertise includes:
+                Silent Videos: Creation of engaging and dynamic videos without audio, perfect for advertisements, presentations, or social media content.
+                Designs: Crafting unique and customized designs, ideal for promoting events, brands, or messages.
                 <!-- <a href="#">Download now <i class='bx bx-right-arrow-alt' ></i></a> -->
-            </div>
+          </div>
         </div>
     </section>
     <!-- services ends -->
@@ -135,7 +148,7 @@
     <!-- portfolio starts -->
     <section class="portfolio" id="portfolio">
         <div class="center-text" data-aos="fade-down">
-            <h2>My <span>Portfolio</span></h2>
+            <h2 id="portfolio-1">My <span>Portfolio</span></h2>
         </div>
 
         <div class="portfolio-content" data-aos="zoom-in-up">
@@ -143,20 +156,20 @@
                 <img src="img/port-2.jpg" alt="">
                 <div class="main-row">
                     <div class="row-text">
-                        <h5>My Portfolio Website</h5>
+                        <h5 id="portfolio-2">My Portfolio Website</h5>
                     </div>
                     <div class="row-icon">
                         <a href="https://github.com/sm-hl/Portfolio"><i class='bx bxl-github' ></i></a>
                     </div>
                 </div>
-                <h4>Using Vanilla js (html css javascript)</h4>
+                <h4 id="portfolio-3">Using Vanilla js (html css javascript)</h4>
             </div>
 
             <div class="row">
                 <img src="img/port-1.jpg" alt="">
                 <div class="main-row">
                     <div class="row-text">
-                        <h5>E-commerce Website for medical product</h5>
+                        <h5 id="portfolio-4">E-commerce Website for medical product</h5>
                     </div>
                     <div class="row-icon">
                         <a href="https://github.com/sm-hl/E-commerce_Medical_Spring">
@@ -164,20 +177,20 @@
                         </a>
                     </div>
                 </div>
-                <h4>Using JEE and Spring boot framework </h4>
+                <h4 id="portfolio-5">Using JEE and Spring boot framework </h4>
             </div>
 
             <div class="row">
                 <img src="img/port-3.jpg" alt="">
                 <div class="main-row">
                     <div class="row-text">
-                        <h5>Dental Clinic Management Website</h5>
+                        <h5 id="portfolio-6">Dental Clinic Management Website</h5>
                     </div>
                     <div class="row-icon">
                         <a href="https://github.com/dakhouch/Sudo-Dental"><i class='bx bxl-github' ></i></a>
                     </div>
                 </div>
-                <h4>Using Spring boot framework, Bootstrap and Jquery</h4>
+                <h4 id="portfolio-7">Using Spring boot framework, Bootstrap and Jquery</h4>
             </div>
         </div>
     </section>
@@ -186,15 +199,16 @@
     <!-- contact starts -->
     <section class="contact" id="contact">
         <div class="center-text" data-aos="fade-down">
-            <h2>Contact <span>Me</span></h2>
+            <h2 id="contact-1">Contact <span>Me</span></h2>
         </div>
 
         <div class="contact-form" data-aos="zoom-in">
             <form action="traitement.php" method="POST">
-                <input type="text" name="name" placeholder="Your name" required>
-                <input type="text" name="email" placeholder="Email Address">
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
-                <input type="submit" name="" value="Send Message" class="send-btn">
+                <input type="text" id="contact-name" name="name" placeholder="Your name" required>
+                <input type="text" id="contact-email" name="email" placeholder="Email Address">
+                <input type="text" id="contact-phone" name="phone" placeholder="Your Phone">
+                <textarea name="message" id="contact-message" cols="30" rows="10" placeholder="Write Message Here..." required></textarea>
+                <input type="submit" id="contact-btn" value="Send Message" class="send-btn">
             </form>
         </div>
     </section>
@@ -203,7 +217,7 @@
     <!-- footer starts -->
     <div class="footer">
         <div class="copyright">
-            <p>&copy; <span id="current-year"></span> | developed with <span class="heart">♥</span> by Salma Halhoul.</p>
+            <p id="copyright">&copy; <span id="current-year"></span> | developed with <span class="heart">♥</span> by Salma Halhoul.</p>
         </div>
         <a href="#home" class="scroll-top hidden">
             <i class="ri-arrow-up-s-fill"></i>
@@ -213,6 +227,7 @@
 
     <!-- js link -->
     <script src="./js/script.js"></script>
+    <script src="./js/langue.js"></script>
     <!-- aos animation script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
