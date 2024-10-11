@@ -426,7 +426,7 @@ form .send-btn{
     font-size: 15px;
     font-weight: 600;
     transition: all .50s ease;
-    width: 30%;
+    width: 33%;
 }
 form .send-btn:hover{
     background: transparent;
